@@ -86,6 +86,11 @@
 				{
 					"match": "--.*\\n",
 					"name": "comment.other.kind2"
+				},
+				{
+					"begin": "\\(\\*@contract",
+					"end": "\\*\\)",
+					"name": "comment.other.kind2"
 				}
 			]
 		},
