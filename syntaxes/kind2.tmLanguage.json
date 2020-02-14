@@ -2,13 +2,13 @@
 	"scopeName": "source.kind2",
 	"patterns": [
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
 			"include": "#strings"
-		},
-		{
-			"include": "#comments"
 		},
 		{
 			"include": "#constants"
@@ -27,6 +27,46 @@
 				{
 					"match": "\\b(true|false|and|or|not|xor|div|mod|pre|current|when|last|bool|int|real|map|red|fill|struct|int8|int16|int32|int64|function|type|const|extern|unsafe|contract|automaton|state|assume|require|enum|guarantee|ensure|import|mode|unless|until|restart|resume|merge|activate|every|initial|node|returns|if|then|else|var|PROPERTY|let|tel|condact|assert|check|MAIN)\\b",
 					"name": "keyword.other.kind2"
+				},
+				{
+					"match": "(<<|>>>?|~|\\^)",
+					"name": "keyword.operator.bitwise.kind2"
+				},
+				{
+					"match": "((&|\\^|\\||<<|>>>?)=)",
+					"name": "keyword.operator.assignment.bitwise.kind2"
+				},
+				{
+					"match": "(===?|!=|<=|>=|<>|<|>)",
+					"name": "keyword.operator.comparison.kind2"
+				},
+				{
+					"match": "([+*/-]=)",
+					"name": "keyword.operator.assignment.arithmetic.kind2"
+				},
+				{
+					"match": "(=)",
+					"name": "keyword.operator.assignment.kind2"
+				},
+				{
+					"match": "(\\-\\-|\\+\\+)",
+					"name": "keyword.operator.increment-decrement.kind2"
+				},
+				{
+					"match": "(\\-|\\+|\\*|\\/)",
+					"name": "keyword.operator.arithmetic.kind2"
+				},
+				{
+					"match": "(!|&&|\\|\\|)",
+					"name": "keyword.operator.logical.kind2"
+				},
+				{
+					"match": "(\\||&)",
+					"name": "keyword.operator.bitwise.kind2"
+				},
+				{
+					"match": "\\b(const|goto)\\b",
+					"name": "keyword.reserved.kind2"
 				}
 			]
 		},
