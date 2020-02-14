@@ -2,7 +2,14 @@
     "name": "kind2",
     "displayName": "kind2",
     "description": "kind2",
-    "version": "0.0.1",
+    "version": "0.0.1",    
+    "author": "University of Iowa",
+    "license": "MIT",    
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kind2-mc/vscode-extension"
+    },
+    "publisher": "uiowa-clc",
     "engines": {
         "vscode": "^1.42.0"
     },
