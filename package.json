@@ -1,0 +1,25 @@
+{
+    "name": "kind2",
+    "displayName": "kind2",
+    "description": "kind2",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "kind2",
+            "aliases": ["kind2", "kind2"],
+            "extensions": [".lus"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "kind2",
+            "scopeName": "source.kind2",
+            "path": "./syntaxes/kind2.tmLanguage.json"
+        }]
+    }
+}
