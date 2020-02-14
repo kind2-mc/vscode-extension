@@ -85,12 +85,21 @@
 			"patterns": [
 				{
 					"match": "--.*\\n",
-					"name": "comment.other.kind2"
+					"name": "comment.line.kind2"
+				},
+				{
+					"match": "--%MAIN.*\\n",
+					"name": "comment.main.kind2"
 				},
 				{
 					"begin": "\\(\\*@contract",
 					"end": "\\*\\)",
-					"name": "comment.other.kind2"
+					"name": "comment.contract.kind2"
+				},
+				{
+					"begin": "\\(\\*",
+					"end": "\\*\\)",
+					"name": "comment.block.kind2"
 				}
 			]
 		},
